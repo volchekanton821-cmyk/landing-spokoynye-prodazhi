@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", () => {
         console.log("Ответ Google Script:", response.status, text);
 
         if (response.ok) {
-          statusEl.textContent = "✅ Заявка отправлена. Проверь Telegram-бота.";
+          statusEl.textContent = "Ваша заявка отправлена. В самое ближайшее время мы с вами свяжемся.";
           statusEl.className = "form-success";
           form.reset();
         } else {
