@@ -956,7 +956,7 @@ body {
   }
 
   .hero-panel {
-    order: -1;
+    /* порядок не меняем */
   }
 
   .format-grid {
