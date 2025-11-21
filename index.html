@@ -364,6 +364,7 @@
 
       <section class="section section-apply" id="apply">
         <div class="container apply-grid">
+          <!-- ЛЕВАЯ КОЛОНКА -->
           <div>
             <h2 class="section-title">Оставить заявку на участие</h2>
             <p class="section-text">
@@ -395,40 +396,49 @@
             </div>
           </div>
 
-          <form class="form" id="applyForm" method="POST" action="https://script.google.com/macros/s/AKfycbxssAUe8KMVeg1xEuVIAkKst5dgtQFxcH8omhUOBaPfXQ05cqG7RM7dE7QxBK4FVtaSQA/exec">
-            <div class="form-field">
-              <label for="name">Имя</label>
-              <input type="text" id="name" name="name" placeholder="Как к вам обращаться" required />
-            </div>
+          <!-- ПРАВАЯ КОЛОНКА -->
+          <div>
+            <form class="form" id="applyForm" method="POST" action="https://script.google.com/macros/s/AKfycbxssAUe8KMVeg1xEuVIAkKst5dgtQFxcH8omhUOBaPfXQ05cqG7RM7dE7QxBK4FVtaSQA/exec">
+              <div class="form-field">
+                <label for="name">Имя</label>
+                <input type="text" id="name" name="name" placeholder="Как к вам обращаться" required />
+              </div>
 
-            <div class="form-field">
-              <label for="telegram">Telegram</label>
-              <input type="text" id="telegram" name="telegram" placeholder="@ваш_ник" required />
-            </div>
+              <div class="form-field">
+                <label for="telegram">Telegram</label>
+                <input type="text" id="telegram" name="telegram" placeholder="@ваш_ник" required />
+              </div>
 
-            <div class="form-field">
-              <label for="niche">Ниша / формат работы</label>
-              <input type="text" id="niche" name="niche" placeholder="Психолог, коуч, терапевт, другой эксперт…" required />
-            </div>
+              <div class="form-field">
+                <label for="niche">Ниша / формат работы</label>
+                <input type="text" id="niche" name="niche" placeholder="Психолог, коуч, терапевт, другой эксперт…" required />
+              </div>
 
-            <div class="form-field">
-              <label for="message">Кратко о вашей ситуации</label>
-              <textarea id="message" name="message" rows="4" placeholder="Что сейчас с Telegram и продажами, к чему хотите прийти?" required></textarea>
-            </div>
+              <div class="form-field">
+                <label for="message">Кратко о вашей ситуации</label>
+                <textarea id="message" name="message" rows="4" placeholder="Что сейчас с Telegram и продажами, к чему хотите прийти?" required></textarea>
+              </div>
 
-            <div class="form-footer">
-              <label class="checkbox">
-                <input type="checkbox" id="consent" name="consent" value="yes" required />
-                <span>Я согласен(а) с обработкой данных</span>
-              </label>
-            </div>
+              <div class="form-footer">
+                <label class="checkbox">
+                  <input type="checkbox" id="consent" name="consent" value="yes" required />
+                  <span>Я согласен(а) с обработкой данных и хочу получить обратную связь по программе.</span>
+                </label>
+              </div>
 
-            <button type="submit" class="btn btn-primary btn-full">
-              Отправить заявку
-            </button>
+              <button type="submit" class="btn btn-primary btn-full">
+                Отправить заявку
+              </button>
 
-            <p id="formStatus" class="form-note"></p>
-          </form>
+              <p class="form-note">
+                Никакого давления. Я аккуратно посмотрю вашу заявку и напишу вам в Telegram.
+              </p>
+
+              <p class="form-success" id="formSuccess" hidden>
+                Спасибо за доверие. Заявка отправлена. Я свяжусь с вами в Telegram в ближайшее время.
+              </p>
+            </form>
+          </div>
         </div>
       </section>
     </main>
